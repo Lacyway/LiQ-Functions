@@ -1,0 +1,6 @@
+#include "ui\Master.hpp"
+#include "cfg\CfgRespawns.hpp"
+
+class CfgFunctions {
+	#include "cfg\CfgFunctions.hpp"
+};
