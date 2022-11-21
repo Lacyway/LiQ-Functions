@@ -1,2 +1,4 @@
 # LiQ-Functions
- A library of functions for LiQ Gaming ARMA 3
+### A library of functions for LiQ Gaming ARMA 3.
+
+Read the [wiki](https://github.com/Lacyway/LiQ-Functions/wiki) for installation and usage.
