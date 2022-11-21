@@ -1,7 +1,6 @@
 _timeOut = VT_Timeout;
 _players = count allPlayers;
-// _neededPlayers = round (_players * (VT_Percentage/100));
-_neededPlayers = 40;
+_neededPlayers = round (_players * (VT_Percentage/100));
 _initMsg = format ["%1 has started a vote to end the mission. %2 votes are needed to end the vote.", name player, _neededPlayers];
 [_initMsg] remoteExecCall ["systemChat"];
 
