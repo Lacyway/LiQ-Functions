@@ -13,8 +13,12 @@ class LIQ {
 		class exminMap {};
 	};
 	class voting {
-		file = "functions\voting";		
+		file = "functions\voting";	
 		class initVote {};
 		class voteLoop {};
+	};
+	class misc {
+		file = "functions\misc";	
+		class saveHostage{};
 	};
 };
