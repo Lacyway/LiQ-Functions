@@ -1,5 +1,6 @@
 #include "ui\Master.hpp"
 #include "cfg\CfgRespawns.hpp"
+#include "cfg\CfgVoting.hpp"
 
 class CfgFunctions {
 	#include "cfg\CfgFunctions.hpp"

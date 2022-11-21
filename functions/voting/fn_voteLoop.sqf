@@ -1,14 +1,15 @@
-_timeOut = 60;
-_players = count allPlayers - entities "HeadlessClient_F";
-_neededPlayers = round _players/2;
+_timeOut = VT_Timeout;
+_players = count allPlayers;
+// _neededPlayers = round (_players * (VT_Percentage/100));
+_neededPlayers = 40;
 _initMsg = format ["%1 has started a vote to end the mission. %2 votes are needed to end the vote.", name player, _neededPlayers];
-[_initMsg] remoteExecCall ["systemChat", -2];
+[_initMsg] remoteExecCall ["systemChat"];
 
-while { _timeOut > 0 && (yesVotes <= _neededPlayers) } do {
+while { _timeOut > 0 && (yesVotes < _neededPlayers) } do {
 	sleep 5;
 	_timeOut = _timeOut - 5;
-	_msg = format ["%1/%2 votes to end mission. Will timeout in %3 seconds. %4 people have voted no.", yesVotes, (_players/2), _timeout, noVotes];
-	[_msg] remoteExecCall ["systemChat", -2];
+	_msg = format ["%1/%2 votes to end mission. Will timeout in %3 seconds. %4 people have voted no.", yesVotes, _neededPlayers, _timeout, noVotes];
+	[_msg] remoteExecCall ["systemChat"];
 };
 
 if (yesVotes >= _neededPlayers) exitWith {"EveryoneLost" call BIS_fnc_endMissionServer};

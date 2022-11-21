@@ -17,7 +17,7 @@ if (_inProgress == true) then {
 	};
 };
 
-if (_answer == true) then {
+if (_answer == true && _inProgress == false) then {
 	systemChat "Starting vote to end mission.";
 	missionNamespace setVariable ["votingInProgress", true, true];
 	missionNamespace setVariable ["yesVotes", 1, true];

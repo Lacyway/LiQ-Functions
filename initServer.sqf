@@ -16,3 +16,6 @@ missionNamespace setVariable ["TP_SquadTp", false, true];
 	_toPush = parseSimpleArray format ["['%1', '%2']", _name, _location];
 	TP_Locations pushBack _toPush;
 } forEach ("true" configClasses (missionConfigFile >> "Respawns" >> "Locations"));
+
+VT_Timeout = getNumber (missionConfigFile >> "Voting" >> "Settings" >> "timeout");
+VT_Percentage = getNumber (missionConfigFile >> "Voting" >> "Settings" >> "percentage");
