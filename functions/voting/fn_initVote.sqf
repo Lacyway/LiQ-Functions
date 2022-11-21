@@ -1,6 +1,8 @@
 params ["_answer"];
 _inProgress = missionNamespace getVariable ["votingInProgress", false];
 
+if (isNil "_answer" || isNil "_inProgress") exitWith { diag_log "LIQ ERROR: Variable missing in fn_initVote" };
+
 if (_inProgress == true) then {
 	if (_answer == true) then {
 		_UID = getPlayerUID player;

@@ -1,1 +1,0 @@
-[] spawn LIQ_fnc_setupEVH;

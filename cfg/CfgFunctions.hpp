@@ -3,7 +3,6 @@ class LIQ {
 	class tp {
 		file = "functions\tp";
 		class addTP {};
-		class setupEVH {};
 		class tpMenu {};
 		class tpPush {};
 		class Teleport {};

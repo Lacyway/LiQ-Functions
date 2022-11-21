@@ -19,3 +19,5 @@ missionNamespace setVariable ["TP_SquadTp", false, true];
 
 VT_Timeout = getNumber (missionConfigFile >> "Voting" >> "Settings" >> "timeout");
 VT_Percentage = getNumber (missionConfigFile >> "Voting" >> "Settings" >> "percentage");
+
+diag_log "LIQ: Init complete.";
