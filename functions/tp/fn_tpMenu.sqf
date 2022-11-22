@@ -12,6 +12,7 @@ _groupTpCheck = _menu displayCtrl 9006;
 _groupTpCheckText = _menu displayCtrl 9007;
 _leaderTpCheck = _menu displayCtrl 9008;
 _leaderTpCheckText = _menu displayCtrl 9009;
+_adminFrame = _menu displayCtrl 9012;
 _map = _menu displayCtrl 9011;
 
 _map ctrlShow false;
@@ -80,6 +81,9 @@ if (_isAdmin == false && isMultiplayer) then {
 	_deleteButton ctrlShow false;
 	_groupTpCheck ctrlShow false;
 	_groupTpCheckText ctrlShow false;
+	_leaderTpCheck ctrlShow false;
+	_leaderTpCheckText ctrlShow false;
+	_adminFrame ctrlShow false;
 };
 
 call LIQ_fnc_refreshList;

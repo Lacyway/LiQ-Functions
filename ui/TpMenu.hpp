@@ -64,7 +64,7 @@ class TpMenu
 		};
 		class AdminFrame: RscFrame
 		{
-			idc = -1;
+			idc = 9012;
 			text = "Admin Controls";
 			x = 0.567031 * safezoneW + safezoneX;
 			y = 0.368 * safezoneH + safezoneY;
