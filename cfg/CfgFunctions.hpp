@@ -19,5 +19,7 @@ class LIQ {
 	class misc {
 		file = "functions\misc";	
 		class saveHostage{};
+		class saveLoadout {};
+		class loadLoadout {};
 	};
 };
