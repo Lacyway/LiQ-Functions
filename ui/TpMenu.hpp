@@ -16,7 +16,7 @@ class TpMenu
 			y = 0.357 * safezoneH + safezoneY;
 			w = 0.28875 * safezoneW;
 			h = 0.308 * safezoneH;
-			colorBackground[] = {0,0,0,0.25};
+			colorBackground[] = GUI_BCG_MENU;
 		};
 		class Header: RscText
 		{
@@ -26,12 +26,12 @@ class TpMenu
 			y = 0.335 * safezoneH + safezoneY;
 			w = 0.28875 * safezoneW;
 			h = 0.022 * safezoneH;
-			colorBackground[] = {0,0,0,0.5};
 			font = "PuristaLight";
 			color = "#E5E5E5";
 			align = "left";
 			shadow = "false";
 			sizeEx = GUI_TEXT_SIZE_SMALL;
+			colorBackground[] = GUI_BCG_COLOR;
 		};
 		class GroupTPCheckText: RscText
 		{
@@ -86,8 +86,8 @@ class TpMenu
 		{
 			idc = 9002;
 			text = "Teleport";
-			x = 0.5825 * safezoneW + safezoneX;
-			y = 0.621 * safezoneH + safezoneY;
+			x = 0.489687 * safezoneW + safezoneX;
+			y = 0.412 * safezoneH + safezoneY;
 			w = 0.0515625 * safezoneW;
 			h = 0.022 * safezoneH;
 			tooltip = "Teleports to selected location.";
@@ -119,9 +119,9 @@ class TpMenu
 		{
 			idc = 9005;
 			text = "Refresh";
-			x = 0.530937 * safezoneW + safezoneX;
-			y = 0.621 * safezoneH + safezoneY;
-			w = 0.0464063 * safezoneW;
+			x = 0.489687 * safezoneW + safezoneX;
+			y = 0.379 * safezoneH + safezoneY;
+			w = 0.0515625 * safezoneW;
 			h = 0.022 * safezoneH;
 			tooltip = "Refresh the list.";
 			onButtonClick = "call LIQ_fnc_refreshList";
@@ -146,8 +146,8 @@ class TpMenu
 		};
 		class CancelButton: RscButtonMenuCancel
 		{
-			x = 0.603125 * safezoneW + safezoneX;
-			y = 0.335 * safezoneH + safezoneY;
+			x = 0.597969 * safezoneW + safezoneX;
+			y = 0.632 * safezoneH + safezoneY;
 			w = 0.04125 * safezoneW;
 			h = 0.022 * safezoneH;
 		};

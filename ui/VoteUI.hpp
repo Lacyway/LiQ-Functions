@@ -17,7 +17,7 @@ class VoteUI
 			y = 0.456 * safezoneH + safezoneY;
 			w = 0.103125 * safezoneW;
 			h = 0.044 * safezoneH;
-			colorBackground[] = {0,0,0,0.25};
+			colorBackground[] = GUI_BCG_MENU;
 			font = "PuristaLight";
 			color = "#E5E5E5";
 			align = "center";

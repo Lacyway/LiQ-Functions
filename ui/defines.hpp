@@ -103,6 +103,9 @@
 #define GRID_W (pixelW * pixelGrid * pixelScale)
 #define GRID_H (pixelH * pixelGrid * pixelScale)
 
+// LIQ
+#include "\a3\ui_f\hpp\definecommoncolors.inc"
+
 
 class ScrollBar
 {
